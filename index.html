@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Detecta al Impostor</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="game-container">
+      <h1>🎮 Detecta al Impostor Mental</h1>
+
+      <!-- INFORMACIÓN -->
+      <div class="info">
+        <p>⭐ Puntaje: <span id="score">0</span></p>
+
+        <p>💙 Vidas: <span id="lives">3</span></p>
+
+        <p>🚀 Nivel: <span id="level">Python 🐍</span></p>
+      </div>
+
+      <!-- PREGUNTA -->
+      <div class="question-box">
+        <h2 id="question">Cargando pregunta...</h2>
+      </div>
+
+      <!-- BOTONES -->
+      <div class="buttons">
+        <button class="correct-btn" onclick="checkAnswer('a')">
+          Síndrome del impostor
+        </button>
+
+        <button class="real-btn" onclick="checkAnswer('b')">
+          Pensamiento realista
+        </button>
+      </div>
+
+      <!-- MENSAJE -->
+      <div id="message"></div>
+
+      <!-- BARRA -->
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
